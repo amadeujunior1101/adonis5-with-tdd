@@ -1,6 +1,6 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-export default class WebhooksController {
+export default class WebHooksController {
   public async iuguStatusChangeTrigger({ request, response }: HttpContextContract) {
     try {
       console.log(request.headers())

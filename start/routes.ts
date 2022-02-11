@@ -20,8 +20,8 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 Route.group(() => {
-  Route.post('/', 'IuguWebHooksController.iuguStatusChangeTrigger')
-}).prefix('/iuguwebhook')
+  Route.post('/', 'WebHooksController.iuguStatusChangeTrigger')
+}).prefix('/webhook')
 
 Route.group(() => {
   Route.post('/users', 'UserController.store')
